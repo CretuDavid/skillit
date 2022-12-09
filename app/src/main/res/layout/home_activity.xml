@@ -14,9 +14,37 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="363dp"
+            android:layout_height="45dp"
+            app:cardBackgroundColor="@color/black">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/home_outline">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/semibold"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="24dp"></TextView>
+
+        </androidx.cardview.widget.CardView>
+
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="670dp"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout">
 
             <GridLayout
                 android:layout_width="wrap_content"
@@ -25,22 +53,63 @@
                 android:rowCount="6">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="55dp"
+                    android:fontFamily="@font/extrabold"
                     android:text="Recommended"
                     android:textColor="@color/white"
-                    android:textSize="32dp"
-                    android:fontFamily="@font/extrabold">
+                    android:textSize="32dp">
 
                 </TextView>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/dark_red"
+                    app:cardCornerRadius="12dp"></androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/dark_red"
+                    app:cardCornerRadius="12dp"></androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/dark_red"
+                    app:cardCornerRadius="12dp"></androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/dark_red"
+                    app:cardCornerRadius="12dp"></androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/dark_red"
+                    app:cardCornerRadius="12dp"></androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="1dp"
+                    app:cardBackgroundColor="@color/dark_gray"
+
+                    ></androidx.cardview.widget.CardView>
 
             </GridLayout>
 
         </ScrollView>
 
         <GridLayout
+            android:id="@+id/gridLayout"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:columnCount="3"
@@ -98,7 +167,6 @@
         </GridLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </LinearLayout>
