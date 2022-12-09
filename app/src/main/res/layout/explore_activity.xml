@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".HomeActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:layout_gravity="bottom">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_button"
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/light_black">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/home_outline"
+                android:layout_gravity="center">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/explore_button"
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/light_black">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/search_fill"
+                android:layout_gravity="center">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile_button"
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/light_black">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/profile_outline"
+                android:layout_gravity="center">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </GridLayout>
+
+
+</ScrollView>
