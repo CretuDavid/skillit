@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_gray"
-    tools:context=".HomeActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,7 +17,8 @@
             android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            app:cardBackgroundColor="@color/light_black">
+            app:cardBackgroundColor="@color/light_black"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:layout_width="22dp"
@@ -47,94 +47,104 @@
             android:layout_width="match_parent"
             android:layout_height="690dp"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/gridLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/dark_gray"
-                android:layout_marginHorizontal="10dp">
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/dark_red"
+                app:cardCornerRadius="360dp">
 
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_marginTop="90dp"
-                    android:src="@drawable/profile_picture_1"
-                    android:layout_gravity="center_horizontal">
 
-                </ImageView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/dark_gray"
+                    app:cardCornerRadius="360dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_picture_1">
+
+                    </ImageView>
+
+                </androidx.cardview.widget.CardView>
 
             </androidx.cardview.widget.CardView>
 
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="10dp"
-                android:rowCount="3"
-                android:columnCount="2">
+                android:layout_marginTop="10dp"
+                android:columnCount="2"
+                android:rowCount="3">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
                     android:text="Name:"
                     android:textColor="@color/red"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/semibold">
+                    android:textSize="24dp">
 
                 </TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/semibold"
                     android:text="@string/user_name"
                     android:textColor="@color/white"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/semibold"
-                    android:layout_marginLeft="10dp">
+                    android:textSize="24dp">
 
                 </TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
                     android:text="Mail:"
                     android:textColor="@color/red"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/semibold">
+                    android:textSize="24dp">
 
                 </TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/semibold"
                     android:text="@string/user_mail"
                     android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/semibold"
-                    android:layout_marginLeft="10dp"
-                    >
+                    android:textSize="20dp">
 
                 </TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
                     android:text="Phone:"
                     android:textColor="@color/red"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/semibold">
+                    android:textSize="24dp">
 
                 </TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/semibold"
                     android:text="@string/user_phone"
                     android:textColor="@color/white"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/semibold"
-                    android:layout_marginLeft="10dp">
+                    android:textSize="24dp">
 
                 </TextView>
 
@@ -144,35 +154,35 @@
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:rowCount="2"
-                android:columnCount="1">
+                android:columnCount="1"
+                android:rowCount="2">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/light_black"
-                    app:cardCornerRadius="20dp"
                     android:layout_marginHorizontal="10dp"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/light_black"
+                    app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="22dp"
                         android:layout_height="22dp"
-                        android:src="@drawable/settings"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:layout_gravity="center_vertical">
+                        android:src="@drawable/settings">
 
                     </ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/profile_first_option"
-                        android:textSize="24dp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/semibold"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="48dp"
-                        android:layout_gravity="center_vertical">
+                        android:fontFamily="@font/semibold"
+                        android:text="@string/profile_first_option"
+                        android:textColor="@color/white"
+                        android:textSize="24dp">
 
                     </TextView>
 
@@ -181,37 +191,35 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="@color/light_black"
-                    app:cardCornerRadius="20dp"
                     android:layout_marginHorizontal="10dp"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/light_black"
+                    app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="22dp"
                         android:layout_height="22dp"
-                        android:src="@drawable/upload"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:layout_gravity="center_vertical">
+                        android:src="@drawable/upload">
 
                     </ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/profile_second_option"
-                        android:textSize="24dp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/semibold"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="48dp"
-                        android:layout_gravity="center_vertical">
+                        android:fontFamily="@font/semibold"
+                        android:text="@string/profile_second_option"
+                        android:textColor="@color/white"
+                        android:textSize="24dp">
 
                     </TextView>
 
                 </androidx.cardview.widget.CardView>
 
             </GridLayout>
-
-
 
 
         </LinearLayout>
