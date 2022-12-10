@@ -25,6 +25,16 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity android:name=".ProfileActivity">
+
+        </activity>
+
+    <activity android:name=".ExploreActivity">
+
+    </activity>
+
+
     </application>
 
 </manifest>
