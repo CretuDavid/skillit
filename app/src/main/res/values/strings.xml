@@ -6,6 +6,7 @@
     <string name="home_second_title">Popular</string>
 
     <string name="explore_top_bar">Explore</string>
+    <string name="explore_search_bar">Search</string>
 
     <string name="profile_top_bar">Profile</string>
     <string name="profile_first_option">Settings</string>
@@ -15,4 +16,12 @@
     <string name="user_mail">davidcretu1234@gmail.com</string>
     <string name="user_phone">0744 840 547</string>
     <string name="user_currency">0.00</string>
+
+    <string name="video_title_1">Darth Vader</string>
+    <string name="video_title_2">Luke Skywalker</string>
+    <string name="video_title_3">Han Solo</string>
+    <string name="video_title_4">Palpatine Dude</string>
+    <string name="video_title_5">Millenium Falcon</string>
+    <string name="video_title_6">X-Wing Thing</string>
+
 </resources>
