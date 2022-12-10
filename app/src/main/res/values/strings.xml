@@ -9,11 +9,12 @@
     <string name="explore_search_bar">Search</string>
 
     <string name="profile_top_bar">Profile</string>
-    <string name="profile_first_option">Settings</string>
-    <string name="profile_second_option">Upload</string>
+    <string name="profile_first_option">Add Funds</string>
+    <string name="profile_second_option">Settings</string>
+    <string name="profile_third_option">Upload</string>
 
-    <string name="user_name">Cretu David</string>
-    <string name="user_mail">davidcretu1234@gmail.com</string>
+    <string name="user_name">Oltean Toma</string>
+    <string name="user_mail">tomaoltean69@gmail.com</string>
     <string name="user_phone">0744 840 547</string>
     <string name="user_currency">0.00</string>
 
@@ -22,6 +23,5 @@
     <string name="video_title_3">Han Solo</string>
     <string name="video_title_4">Palpatine Dude</string>
     <string name="video_title_5">Millenium Falcon</string>
-    <string name="video_title_6">X-Wing Thing</string>
 
 </resources>

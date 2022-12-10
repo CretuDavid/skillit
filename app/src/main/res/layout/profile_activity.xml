@@ -69,7 +69,7 @@
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/profile_picture_1">
+                        android:src="@drawable/profile_picture_3">
 
                     </ImageView>
 
@@ -184,6 +184,48 @@
 
                     </ImageView>
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="clip_vertical"
+                        app:cardBackgroundColor="@color/light_black"
+                        app:cardCornerRadius="20dp">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/add"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dp">
+
+                            </ImageView>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_first_option"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/semibold">
+
+                            </TextView>
+
+
+
+                        </GridLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
                 </GridLayout>
 
             </GridLayout>
@@ -217,7 +259,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="48dp"
                         android:fontFamily="@font/semibold"
-                        android:text="@string/profile_first_option"
+                        android:text="@string/profile_second_option"
                         android:textColor="@color/white"
                         android:textSize="24dp">
 
@@ -248,7 +290,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="48dp"
                         android:fontFamily="@font/semibold"
-                        android:text="@string/profile_second_option"
+                        android:text="@string/profile_third_option"
                         android:textColor="@color/white"
                         android:textSize="24dp">
 

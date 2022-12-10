@@ -72,14 +72,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:hint="Search:"
-                    android:textColorHint="@color/white"
-                    android:textColor="@color/white">
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    tools:ignore="TouchTargetSizeCheck">
+
                 </EditText>
+
             </GridLayout>
-
-
-
-
 
         </androidx.cardview.widget.CardView>
 
