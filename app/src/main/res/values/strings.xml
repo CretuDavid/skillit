@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">z</string>
+
+    <string name="home_top_bar">Home</string>
+    <string name="home_first_title">Recommneded</string>
+
+    <string name="profile_top_bar">Profile</string>
+    <string name="profile_first_option">Settings</string>
+    <string name="profile_second_option">Upload</string>
+
     <string name="user_name">Cretu David</string>
     <string name="user_mail">davidcretu1234@gmail.com</string>
     <string name="user_phone">0744 840 547</string>
