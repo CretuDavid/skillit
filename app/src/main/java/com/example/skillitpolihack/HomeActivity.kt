@@ -20,10 +20,12 @@ class HomeActivity :AppCompatActivity(){
         explore_button.setOnClickListener(){
             intent = Intent(this, ExploreActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
         profile_button.setOnClickListener(){
             intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
 }
